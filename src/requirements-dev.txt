@@ -1,0 +1,10 @@
+black
+geopandas
+netCDF4
+pandas
+pytest
+pytest-cov
+rasterio
+rioxarray
+ruff
+xarray
