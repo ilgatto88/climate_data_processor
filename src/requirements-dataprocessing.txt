@@ -1,0 +1,6 @@
+geopandas
+netCDF4
+pandas
+rasterio
+rioxarray
+xarray
