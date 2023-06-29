@@ -161,3 +161,4 @@ cython_debug/
 
 # Project related files and folders
 .climate_data_processor/
+.vscode/
