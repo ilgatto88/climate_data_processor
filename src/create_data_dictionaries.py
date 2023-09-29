@@ -1,8 +1,8 @@
 import pandas as pd
 
-from api_data_processing import config
-from api_data_processing.general import prepare_array_for_json
-from api_data_processing.models import MunicipalityDataSettings
+from src import config
+from src.general import prepare_array_for_json
+from src.models import MunicipalityDataSettings
 
 
 def create_municipality_meta_dict(meta: MunicipalityDataSettings) -> dict:

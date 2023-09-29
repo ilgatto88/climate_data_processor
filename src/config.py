@@ -1,5 +1,5 @@
-BASE_PATH = "/home/jtordai/projects/climate_api/"
-BASE_DATA_PATH = BASE_PATH + "api_data/"
+BASE_PATH = "/home/jtordai/projects/"
+BASE_DATA_PATH = BASE_PATH + "input_data/"
 BASE_SHAPEFILE_PATH = BASE_DATA_PATH + "metadata/shapefiles/"
 MUNICIPALITY_SHAPEFILE = f"{BASE_SHAPEFILE_PATH}STATISTIK_AUSTRIA_GEM_20230101.shp"
 

@@ -3,7 +3,7 @@ import json
 
 import xarray as xr
 
-from api_data_processing import (
+from src import (
     config,
     create_data_dictionaries,
     format_conversion,
@@ -11,8 +11,8 @@ from api_data_processing import (
     process_ensemble,
     process_historical,
 )
-from api_data_processing.loaders import load_dataset
-from api_data_processing.models import MunicipalityDataSettings
+from src.loaders import load_dataset
+from src.models import MunicipalityDataSettings
 
 
 def create_municipality_climate_data(
@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
     municipality_list = json.load(
         open(
-            "/home/jtordai/projects/climate_api/api_data/metadata/json/municipalities.json",
+            f"{config.BASE_DATA_PATH}metadata/json/municipalities.json",
             "r",
         )
     )
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     json.dump(
         municipality_data_list,
         open(
-            f"/home/jtordai/projects/climate_api/api_data/climate_data/json/municipality_data_{PARAMETER}.json",
+            f"{config.BASE_DATA_PATH}climate_data/json/municipality_data_{PARAMETER}2.json",
             "w",
         ),
     )

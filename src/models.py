@@ -2,8 +2,8 @@ from dataclasses import dataclass
 
 import geopandas
 
-from api_data_processing import config, geodataframe_tools
-from api_data_processing.static_geo import VIENNA_GIDS
+from src import config, geodataframe_tools
+from src.static_geo import VIENNA_GIDS
 
 
 @dataclass

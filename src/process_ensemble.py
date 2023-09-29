@@ -2,14 +2,14 @@ import geopandas
 import pandas as pd
 import xarray as xr
 
-from api_data_processing import (
+from src import (
     area_selection,
     config,
     data_statistics,
     general,
     loaders,
 )
-from api_data_processing.models import MunicipalityDataSettings
+from src.models import MunicipalityDataSettings
 
 
 def preprocess_ensemble_data(
