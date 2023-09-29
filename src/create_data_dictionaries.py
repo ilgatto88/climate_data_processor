@@ -1,8 +1,8 @@
 import pandas as pd
 
-from src import config
-from src.general import prepare_array_for_json
-from src.models import MunicipalityDataSettings
+import config
+from general import prepare_array_for_json
+from models import MunicipalityDataSettings
 
 
 def create_municipality_meta_dict(meta: MunicipalityDataSettings) -> dict:

@@ -1,8 +1,10 @@
 import geopandas
 import xarray as xr
 
-from src import area_selection, config, general
-from src.models import MunicipalityDataSettings
+import area_selection
+import config
+import general
+from models import MunicipalityDataSettings
 
 
 def preprocess_historical_data(

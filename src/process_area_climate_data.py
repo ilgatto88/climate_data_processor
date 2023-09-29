@@ -1,12 +1,10 @@
 import xarray as xr
 
-from src import (
-    config,
-    format_conversion,
-    general,
-    geodataframe_tools,
-    loaders,
-)
+import config
+import format_conversion
+import general
+import geodataframe_tools
+import loaders
 
 
 def oeks_to_geotiff_modelwise_and_aggr(source: str) -> None:

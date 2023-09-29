@@ -3,16 +3,14 @@ import json
 
 import xarray as xr
 
-from src import (
-    config,
-    create_data_dictionaries,
-    format_conversion,
-    geodataframe_tools,
-    process_ensemble,
-    process_historical,
-)
-from src.loaders import load_dataset
-from src.models import MunicipalityDataSettings
+import config
+import create_data_dictionaries
+import format_conversion
+import geodataframe_tools
+import process_ensemble
+import process_historical
+from loaders import load_dataset
+from models import MunicipalityDataSettings
 
 
 def create_municipality_climate_data(
@@ -84,7 +82,7 @@ if __name__ == "__main__":
 
     municipality_data_list = []
 
-    for municipality in municipality_list:
+    for municipality in [municipality_list[0]]:
         municipality_settings = MunicipalityDataSettings(
             municipalityId=municipality["m_id"],
             climateParameter=PARAMETER,
@@ -105,7 +103,7 @@ if __name__ == "__main__":
     json.dump(
         municipality_data_list,
         open(
-            f"{config.BASE_DATA_PATH}climate_data/json/municipality_data_{PARAMETER}2.json",
+            f"{config.BASE_DATA_PATH}climate_data/json/municipality_data_{PARAMETER}.json",
             "w",
         ),
     )

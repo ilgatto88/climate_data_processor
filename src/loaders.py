@@ -1,6 +1,6 @@
 import xarray as xr
 
-from src import static_geo
+import static_geo
 
 
 def load_dataset(path: str) -> xr.Dataset:

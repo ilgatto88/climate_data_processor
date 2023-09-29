@@ -2,14 +2,12 @@ import geopandas
 import pandas as pd
 import xarray as xr
 
-from src import (
-    area_selection,
-    config,
-    data_statistics,
-    general,
-    loaders,
-)
-from src.models import MunicipalityDataSettings
+import area_selection
+import config
+import data_statistics
+import general
+import loaders
+from models import MunicipalityDataSettings
 
 
 def preprocess_ensemble_data(

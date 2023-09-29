@@ -3,7 +3,7 @@ import rioxarray
 import rioxarray.exceptions
 import xarray as xr
 
-from src.general import calculate_along_dimension
+from general import calculate_along_dimension
 
 
 def clip_dataset(dataset: xr.Dataset, area: gpd.GeoDataFrame) -> xr.Dataset:
