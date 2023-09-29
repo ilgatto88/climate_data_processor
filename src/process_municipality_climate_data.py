@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     municipality_data_list = []
 
-    for municipality in [municipality_list[0]]:
+    for municipality in municipality_list:
         municipality_settings = MunicipalityDataSettings(
             municipalityId=municipality["m_id"],
             climateParameter=PARAMETER,
